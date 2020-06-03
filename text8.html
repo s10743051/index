@@ -16,8 +16,12 @@
     <p>this is my text 8</p>
 
     <form method="get" action="">
-		<input type="text" name="id"  /><br>
-		<input type="password" name="pw"  /><br>
+    	<label for="phone">Your Name:</label><br><br>
+		<input type="text" name="id"  /><br><br>
+		<label for="phone">Your Password:(8 digits)</label><br><br>
+		<input type="password" pattern="[a-zA-Z0-9]{8,}"><br><br>
+		<label for="phone">Your phone number:</label><br><br>
+		<input type="tel id" id="phone" name="phone" placeholder="0912-123123" pattern="[0-9]{4}-[0-9]{6}"><br><br>
 		<input type="submit" value="送出表單" />
 	</form>
 	
