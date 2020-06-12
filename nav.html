@@ -1,23 +1,29 @@
+
+
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-   
+<title>JQuery Cycle Plugin - Basic Demo</title>
+<style type="text/css">
+.slideshow { height: 232px; width: 232px; margin: auto }
+.slideshow img { padding: 15px; border: 1px solid #ccc; background-color: #eee; }
+</style>
+<!-- include jQuery library -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('.slideshow').cycle({
+		fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+	});
+});
+</script>
 </head>
-
 <body>
-    <nav>
-        <a href="text1.html">Link to test1</a>
-        <a href="text2.html">Link to test2</a>
-        <a href="text3.html">Link to test3</a>
-        <a href="text4.html">Link to test4</a>
-        <a href="text5.html">Link to test5</a>
-        <a href="text6.html">Link to test6</a>
-        <a href="text7.html">Link to test7</a>
-        <a href="text8.html">Link to test8</a>
-    </nav>
+	<div class="slideshow">
+		<img src="1.jpg" width="200" height="200" />
+		
+	</div>
 </body>
-
 </html>
